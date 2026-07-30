@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
-  <!-- This loads Tailwind CSS to keep the design clean and simple -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-stone-900 text-stone-300 font-serif">
 
-  <!-- THIS IS YOUR SHARED BANNER -->
-  <nav class="bg-white shadow-md p-6 mb-8">
+  <!-- SHARED BANNER -->
+  <nav class="border-b border-stone-700 p-6 mb-12">
     <div class="max-w-4xl mx-auto flex justify-between items-center">
-      <!-- Your Logo/Home Link -->
-      <a href="/" class="text-2xl font-bold tracking-wider">PORTFOLIO</a>
+      <!-- Your Name / Home Link -->
+      <a href="/" class="text-3xl font-bold text-stone-100 tracking-widest uppercase">Clay Hull</a>
       
       <!-- Navigation Links -->
-      <div class="space-x-6 text-lg font-semibold">
-        <a href="/props.html" class="hover:text-amber-600 transition">Props</a>
-        <a href="/puppets.html" class="hover:text-amber-600 transition">Puppets</a>
-        <a href="/rentals.html" class="hover:text-amber-600 transition">Rentals</a>
+      <div class="space-x-8 text-lg">
+        <a href="/props.html" class="hover:text-amber-700 transition duration-300">Props</a>
+        <a href="/puppets.html" class="hover:text-amber-700 transition duration-300">Puppets</a>
+        <a href="/rentals.html" class="hover:text-amber-700 transition duration-300">Rentals</a>
       </div>
     </div>
   </nav>
 
-  <!-- THIS IS WHERE EACH PAGE'S UNIQUE CONTENT WILL APPEAR -->
-  <main class="max-w-4xl mx-auto px-6">
+  <!-- CONTENT INJECTION -->
+  <main class="max-w-4xl mx-auto px-6 pb-12">
     {{ content }}
   </main>
 
